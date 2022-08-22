@@ -1,0 +1,115 @@
+body,div,section,span,li,ul,ol,h1,h2,h3,h4,h5,p,h6,img,table,video,blockquote,
+input, label, button
+{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    width:12%;
+    text-align:left;
+}
+
+#submit{
+    padding: 3px;
+    width: 18%;
+    background-color: lightblue;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+#comments{
+    background-color: lightpink;
+    width: 70%;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 1.2em;
+}
+
+.icons{
+    width: 40px;
+    height: 40px;
+}
+
+#reactions_container{
+    display: block;
+}
+
+.viewers_reaction{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#subcontianer {
+    display: block;
+    width: 70vw;
+}
+
+.video_container{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 70vw;
+    flex-wrap: wrap;
+}
+
+.descriptive_text{
+    width: 40%;
+    text-align: left;
+}
+
+.descriptive_text > p{
+    margin-left: 3px;
+    margin-right: 3px;
+    width:fit-content;
+}
+
+.my_videos{
+    width: 60%;
+    height: 300px;
+    padding:0;
+    margin:0;
+    border-radius: 10px;
+}
+
+/*///////////////////////////////////////////*/
+
+.navigation{
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navbar li{
+    background-color: rgb(43, 49, 51);
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.navbar li > a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    /* reference list: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+    font-weight: 700;
+}

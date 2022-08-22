@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main.css">
+    <style>
+        body,div,section,ul,li,p,small,span,table,th,td,
+        h1,h2,h3,h5,h6
+        {
+            padding: 0;
+            margin: 0;
+        }
+        #navbar > ul{
+            display: flex;
+            list-style: none;
+            /* text-decoration: capitalise; */
+        }
+        #navbar{
+            width:70%;
+            position: relative;
+            left:9%;
+        }
+        li {
+            padding-left: 10px;
+            color: rgb(28, 85, 242);
+        }
+        #screen_heading{
+            align-items:center;
+            text-align: center;
+        }
+        #outer_container{
+            width: 100vw;
+            display:flex;
+            justify-content: center;
+        }
+        #left_container{
+            width: 60%;
+            height:90vh;
+        }
+        #right_container{
+            width:40%;
+            height:90vh;
+            background-color:lightblue;
+            
+        }
+        #table_container{
+            display: flex;
+        }
+        table{
+            width:max-content;
+            width:100%;
+        }
+        table, th{
+            border: 1px solid lightblue;
+        }
+        #market_indices_table, #commodities_table,
+        #commodities_table, #thomson_reuters_table,
+        #commodities_futures_table, #summary_table{
+            width:100%;
+        }
+
+        .table_subheadings{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .right_table{
+            display: flex;
+            justify-content: space-between;
+        }
+        #sponsor_span{
+            display: flex;
+            width: 100%;
+            justify-content: start;
+        }
+        #sponsor_span > h4{
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 5px;
+            background-color:red;
+            color:white;
+        }
+        #sponsor_span > p{
+            padding-top: 5px;
+        }
+        #nav_section{
+            color:white;
+            background-color: rgb(39, 39, 172);
+            width:100%;
+        }
+        #nav_section li{
+            color:white;
+            background-color:rgb(19, 19, 87);
+            display: inline;
+            margin-right:10px;
+            padding-right: 10px;
+            justify-content:space-evenly;
+            list-style: none;
+        }
+        #nav_section h2{
+            text-transform: uppercase;
+        }
+        #content_holder{
+            width:80vw;
+            display:flex;
+        }
+        #search_span{
+            padding: 3px;
+            border: .5px solid black;
+            display: flex;
+            justify-content: space-around;
+        }
+        #search{
+            width:70%;
+            outline: 0;
+            border:0;
+            background-color: transparent;
+        }
+        #search_span > label{
+            background-color: red;
+            color:white;
+            border-radius: 3px;
+            padding: 3px;
+            text-transform: uppercase;
+        }
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navigation">
+        <ul class="navbar">
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="table.html">Tables</a> </li>
+        </ul>
+    </nav>
+    <div id="screen_heading">
+        <h1>Commodities</h1>
+        <hr>
+        <nav id="navbar">
+            <ul>
+                <li>MARKETS</li>
+                <li>BUSINESS</li>
+                <li>ECONOMY</li>
+                <li>GREEN MARKETS</li>
+                <li>HOT STOCKS</li>
+                <li>MORE TOPICS</li>
+                <li><img src="static/download_resized_50_50.png" alt="" width="15"></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="outer_container">
+        <div id="content_holder">
+            <div id="left_container">
+                <h3>THOMSON REUTERS</h3>
+                <div id="table_container">
+                    <h2><img src="static/download_resized_50_50.png" alt="Just a drop down" align="left" width="15"> 359.42</h2>
+                    <table id="thomson_reuters_table">
+                        <thead>
+                            <tr>
+                                <th width="120">Change</th>
+                                <th width="120">Open</th>
+                                <th width="120">High</th>
+                                <th width="120">Low</th>
+                                <th width="120">Times</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="120">-3.76</td>
+                                <td width="120">350.76</td>
+                                <td width="120">99.76</td>
+                                <td width="120">4.76</td>
+                                <td width="120">04/15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>COMMODITY FUTURES</h3>
+                <table id="commodities_futures_table">
+                    <tr>
+                        <th>Energy</th>
+                        <td>Oil, Natural Gas, Electricity</td>
+                    </tr>
+                    <tr>
+                        <th>Metals</th>
+                        <td>Base Metals, Precious Metals</td>
+                    </tr>
+                    <tr>
+                        <th>Grains</th>
+                        <td>Corn/Maize, Wheat, Barley, Rice</td>
+                    </tr>
+                    <tr>
+                        <th>Oilseeds</th>
+                        <td>Soybeans, Rapsead, Palm Oil</td>
+                    </tr>
+                    <tr>
+                        <th>Softs</th>
+                        <td>Sugar, Coffee, Cocoa, Rubber, Citrus, Cotton</td>
+                    </tr>
+                    <tr>
+                        <th>Livestocks</th>
+                        <td>Lean Hogs, Live Cattle</td>
+                    </tr>
+                </table>
+                <div>
+                    <h4>Thomson Reuters equal weight continuous commodities index (CCI)</h4>
+                    <p>
+                        <small>
+                            Position of price in relation to its average. This chart is dedired to identify
+                            cyclical turns. CCI works well in ranging markets and typically flactuates between
+                            +100 and -100
+                        </small>
+                    </p>
+                </div>
+                <table id="summary_table">
+                    <thead>
+                        <tr>
+                            <th>Commodity</th>
+                            <th>Currency</th>
+                            <th>Last</th>
+                            <th>Change</th>
+                            <th>%Change</th>
+                            <th>Trade Date/Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hogs, Lean Pit CME Jun 11</td>
+                            <td>USD</td>
+                            <td>101.28</td>
+                            <td>+0.20</td>
+                            <td>+0.20%</td>
+                            <td>04/18 14:13</td>
+                        </tr>
+                        <tr>
+                            <td>Oil, Heating New York No. 2 NYMEX May 11</td>
+                            <td>USD</td>
+                            <td>3.28</td>
+                            <td>+0.16</td>
+                            <td>+0.16%</td>
+                            <td>04/18 15:13</td>
+                        </tr>
+                        <tr>
+                            <td>Crude Oil Light Sweet May 11</td>
+                            <td>USD</td>
+                            <td>130.28</td>
+                            <td>-2.20</td>
+                            <td>-2.20%</td>
+                            <td>04/18 14:13</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <div id="right_container">
+                <section id="nav_section">
+                    <h2>Markets</h2>
+                    <ul>
+                        <li>U.S.</li>
+                        <li>EUROPE</li>
+                        <li>ASIA</li>
+                        <li>SECTORS</li>
+                    </ul>
+                    <span id="sponsor_span">
+                        <p>SPONSORED BY</p>
+                        <h4 id="sponsor_badge">Trade Forex with Citi.</h4>
+                    </span>
+                </section>
+                <span id="search_span" style="display:flex;">
+                    <input id="search" name="search" type="text"
+                    placeholder="Enter Company Name or Symbol">
+                    <label for="search">Search</label>
+                </span>
+                <span class="table_subheadings">
+                    <h3>Market Indices</h3>
+                    <p> <small>All Indices</small> </p>
+                </span>
+                <table id="market_indices_table">
+                    <tr>
+                        <th>DOW</th>
+                        <td class="right_table">
+                            <h4>12,189.14</h4>
+                            <p>-152.67</p>
+                            <p>-1.67%</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>S&P 500</th>
+                        <td class="right_table">
+                            <h4>1,305.14</h4>
+                            <p>-152.67</p>
+                            <p>-1.67%</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>NASDAQ</th>
+                        <td class="right_table">
+                            <h4>12,189.14</h4>
+                            <p>-152.67</p>
+                            <p>-1.67%</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>TR US INDEX</th>
+                        <td class="right_table">
+                            <h4>12,189.14</h4>
+                            <p>-152.67</p>
+                            <p>-1.67%</p>
+                        </td>
+                    </tr>
+                </table>
+    
+                <span class="table_subheadings">
+                    <h3>Currencies</h3>
+                    <p> <small>All Currencies</small> </p>
+                </span>
+                <table id="currencies_table">
+                    <tr>
+                        <th>EUR/USD</th>
+                        <td>
+                            <p>1.423</p>
+                            <p>-1.35%</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>GBP/USD</th>
+                        <td>
+                            <p>1.653</p>
+                            <p>-0.45%</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>USD/JPY</th>
+                        <td>
+                            <p>82.423</p>
+                            <p>-0.65%</p>
+                        </td>
+                    </tr>
+                </table>
+                
+                <span class="table_subheadings">
+                    <h3>Commodities</h3>
+                    <p> <small>All Commodities</small> </p>
+                </span>
+                <table id="commodities_table">
+                    <tr>
+                        <th>GOLD</th>
+                        <td>
+                            <p>1,496.43</p>
+                            <p>+10.20</p>
+                            <p>+0.65%</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
